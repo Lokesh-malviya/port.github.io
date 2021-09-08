@@ -4,3 +4,7 @@ var typed = new Typed(".typing", {
     backSpeed: 60,
     loop: true
 });
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
