@@ -35,6 +35,12 @@ body{
 .dark-mode .darkmode .fas{
     color: #fff;
 }
+.dark-mode .home .home-content a{
+    color: #fff;
+}
+.home .home-content a{
+ color: rgb(6, 6, 48);
+}
 .darkmode{
     position: absolute;
     left: 90%;
