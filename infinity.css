@@ -7,6 +7,7 @@
     text-decoration: none;
     color: white;
     font-weight: 500;
+    box-sizing: border-box;
 }
 body{
     background-color: #fff;
@@ -45,8 +46,8 @@ body{
     position: absolute;
     left: 90%;
     top: 13%;
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     
     align-items: center;
     margin-left: 5px;
@@ -74,7 +75,9 @@ body{
     color: black;
     background-color: #fff;
 }
-
+.dark-mode .emi{
+    background: violet;
+}
 .continer{
     width: 100%;
     min-height: 9vh;
@@ -83,13 +86,16 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     
+
     
 }
 .logo{
-    width: 80vw;
+    
     display: flex;
     align-items: center;
-    
+    flex: 1;
+    max-width: 250vw;
+    max-height: 2000px;
 }
 nav{
     flex: 1;
@@ -101,7 +107,7 @@ nav ul li {
     list-style: none;
     flex-wrap: wrap;
     flex: 1;
-    display: inline-block;
+    display:inline-block;
     margin-left: 0px;
     border-radius: 0px;
     padding: 10px 22px;
@@ -109,11 +115,13 @@ nav ul li {
 }
 
 .h2{
-    font-size: 40px;
+    font-size: 5vh;
     position: absolute;
     top : 0%;
     left : 3%;
     color: black;
+    min-height: auto;
+    margin-top: 7px;
 }
 nav ul li a{     
     border-radius: 0px;
@@ -127,23 +135,24 @@ nav ul li a:hover{
    color:#ffff;
     
 }
+
 .emi{
-    position: absolute;
-    width: 70vh;
-    height: 70vh;
-    left: 100vh;
-    top: 15vh;
+    float: right;
+    width: 72vh;
+    height: 72vh;
     border-radius: 100%;
-    background: rgba(30, 27, 27, 0.38);
+    background: crimson;
     display: flex;
+    max-width: 600px;
+    margin-left: 130px;
+
 
 }
 .eminiem{
-    position: absolute;
-    width: 62vh;
-    height: auto;
-    left: 1vh;
-    top: 0px;
+    
+    width: 69vh;
+    height: 84vh;
+    
 }
 .mini{
     position: absolute;
@@ -156,6 +165,8 @@ nav ul li a:hover{
     font-weight: bold;
     font-size:4vh;
     color: rgb(6, 6, 48);
+    display: flex;
+    flex: 1;
 }
 h1{
     font-size: 6vh;
@@ -174,12 +185,31 @@ h1{
     position: absolute;
     top : 70%;
     left : 2%;
-    width : 50%;
+    width : 55%;
+    height: 20%;
     padding: 15px 50px;
     justify-content: center;
     align-items: center;
+    display: inline-block;
+    
 
 }
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .logos ul li {
+      width: 80%;
+      padding: 0;
+    }
+    .home-content, nav {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .logos ul li, .home-content, footer {
+      width: 100%;
+    }
+  }
 .logos ul li{
     
     margin-top: 7px;
@@ -190,7 +220,9 @@ h1{
     padding-right: 50px;
     padding-bottom: 60px;
     display: inline-block;
-    
+    min-width: auto;
+    flex: auto;
+    z-index: 1;
    
 
 }
@@ -239,6 +271,8 @@ footer{
     color: #fff;
     text-align: center;
     width: 195vh;
+    max-width: 250vw;
+    max-height: 2000px;
 }
 footer span a{
     color: crimson;
@@ -257,34 +291,38 @@ footer span a:hover{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 5%;
     display: flex;
 }
 .home .max-width{
   width: 100%;
+  height: 80%;
   display: flex;
+ 
 }
 .home .max-width .row{
   margin-right: 0;
+  
 }
 .home .home-content .text-1{
     font-size: 27px;
+    margin-top: 80px;
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 10vh;
     font-weight:bolder;
     margin-left: -3px;
     color: rgb(6, 6, 48);
 }
 .home .home-content .text-4{
-    font-size: 40px;
+    font-size: 5vh;
     margin: 5px 0;
     color: rgb(6, 6, 48);
 }
 .home .home-content .text-4 span{
     color: crimson;
-    font-size: 40px;
+    font-size: 4vh;
 }
 #typedtext{
     font-family :-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
